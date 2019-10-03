@@ -1,0 +1,50 @@
+﻿@model Inghram_MIS_4200.Models.courseDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>courseDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.course.courseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.course.courseName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.student.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.student.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.courseDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.courseDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.courseTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.courseTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.courseDetailID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
